@@ -22,3 +22,18 @@ options = HandLandmarkerOptions(base_options=base_options,running_mode=VisionTas
 landmarker = HandLandmarker.create_from_options(options)
 print("HandLandMaker created successfully")
 
+
+cap = cv2.VideoCapture(0)
+cap.set(3,640)
+cap.set(4,480)
+
+while True:
+    ret, frame = cap.read()
+    
+    if not ret:
+        break
+    
+    frame = cv2.flip(frame,1)
+    
+    h,w = frame.shape[:2]
+    
