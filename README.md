@@ -23,7 +23,7 @@ The webcam feed is processed by MediaPipe's `HandLandmarker` in live stream mode
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/hand-gesture-controller.git
+git clone https://github.com/frankuard/brightness-and-volume-controller-using-hand_gesture
 cd hand-gesture-controller
 ```
 
