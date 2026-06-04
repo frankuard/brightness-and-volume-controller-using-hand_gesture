@@ -72,6 +72,21 @@ while True:
             
             thumb_x, thumb_y = int(thumb_tip.x*w), int(thumb_tip.y*h)
             
+            index_x, index_y = int(index_tip.x*w), int(index_tip.y*h)
+            
+            distance = math.hypot(index_x-thumb_x, index_y-thumb_y)
+            
+            
+            min_distance = 30
+            max_distance = 160
+            
+            volume = np.interp(distance,[min_distance,max_distance],[0,100])
+            
+            volume = np.clip(volume,0,100)
+            
+            cv2.putText(frame, str(int(volume)),(50,80),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),2)
+            
+            
                 
     cv2.imshow("Volume Controller", frame)
         
