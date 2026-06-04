@@ -27,17 +27,13 @@ git clone https://github.com/your-username/hand-gesture-controller.git
 cd hand-gesture-controller
 ```
 
-### 2. Download the MediaPipe Model
-
-Download `hand_landmarker.task` from the [MediaPipe Models page](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker) and place it inside the `models/` folder.
-
-### 3. Install the Required Libraries
+### 2. Install the Required Libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Controller
+### 3. Run the Controller
 
 **For Brightness Control:**
 ```bash
