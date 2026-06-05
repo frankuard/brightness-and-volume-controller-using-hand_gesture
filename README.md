@@ -24,7 +24,7 @@ The webcam feed is processed by MediaPipe's `HandLandmarker` in live stream mode
 
 ```bash
 git clone https://github.com/frankuard/brightness-and-volume-controller-using-hand_gesture
-cd hand-gesture-controller
+cd brightness-and-volume-controller-using-hand_gesture
 ```
 
 ### 2. Install the Required Libraries
