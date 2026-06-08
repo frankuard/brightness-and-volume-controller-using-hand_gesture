@@ -37,12 +37,12 @@ pip install -r requirements.txt
 
 **For Brightness Control:**
 ```bash
-python brightness_controller.py
+python brightness.py
 ```
 
 **For Volume Control:**
 ```bash
-python volume_controller.py
+python volume.py
 ```
 
 Press **`q`** to quit.
